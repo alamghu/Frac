@@ -1,5 +1,4 @@
 import streamlit as st
-import matplotlib.pyplot as plt
 
 def visualize_wellbore_schematic(top_of_proppant, tubing_depth_top_of_perf, casing_depth_hud):
     # Plotting wellbore schematic
