@@ -37,11 +37,11 @@ if st.button("Visualize Well"):
      ax.set_xlim([-1, 1])
      ax.set_ylim([0, Casing_Depth_HUD+ 1])
      ax.axhline(y=0, color='black', linewidth=1)
-     ax.axhline(y=casing_depth_hud, color='black', linewidth=1)
-     ax.axhline(y=tubing_depth_top_of_perf, color='red', linewidth=1)
+     ax.axhline(y=Casing_Depth_HUD, color='black', linewidth=1)
+     ax.axhline(y=Tubing_Depth_Top_of_Perf, color='red', linewidth=1)
      ax.axhline(y=top_of_proppant, color='green', linewidth=1)
      ax.text(-0.1, -0.5, "Wellbore", ha='center', va='bottom')
-     ax.text(-0.2, tubing_depth_top_of_perf, "Top of Perf", ha='right', va='bottom', color='red')
+     ax.text(-0.2, Tubing_Depth_Top_of_Perf, "Top of Perf", ha='right', va='bottom', color='red')
      
      st.pyplot(fig)
      
