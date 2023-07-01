@@ -33,10 +33,8 @@ Casing_ID = st.number_input("Casing/Tubing ID (inch)")
 # Logic & Calculation
 A = (lbs_of_Proppant_in_Tubular / (Proppant_Specific_Gravity / 2.65) * 14.3)
 B = (0.0408 * (Casing_ID ** 2)) * (Casing_Depth_HUD - Tubing_Depth_Top_of_Perf)
-C = (Tubing_Depth_Top_of_Perf - ((lbs_of_Proppant_in_Tubular / ((Proppant_Specific_Gravity / 2.65) * 14.3) - (
-            (0.0408 * Casing_ID ** 2) * (Casing_Depth_HUD - Tubing_Depth_Top_of_Perf)))) * (24.51 / Tubing_ID ** 2)
-D = (Casing_Depth_HUD - (lbs_of_Proppant_in_Tubular / ((Proppant_Specific_Gravity / 2.65) * 14.3)) * (
-            24.51 / Tubing_ID ** 2))
+C = (Tubing_Depth_Top_of_Perf - ((lbs_of_Proppant_in_Tubular / ((Proppant_Specific_Gravity / 2.65) * 14.3) - ((0.0408 * Casing_ID ** 2) * (Casing_Depth_HUD - Tubing_Depth_Top_of_Perf)))) * (24.51 / Tubing_ID ** 2)
+D = (Casing_Depth_HUD - (lbs_of_Proppant_in_Tubular / ((Proppant_Specific_Gravity / 2.65) * 14.3)) * (24.51 / Tubing_ID ** 2))
 
 if A > B:
     top_of_proppant = C
