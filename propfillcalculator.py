@@ -31,11 +31,11 @@ else:
     st.write(f'Top of Proppant = {top_of_proppant} feet')
 
 # Visualize the wellbore schematic
-if st.button("Visualize Well"):
+if st.button("Visualize Wellbore"):
      plt.figure(figsize = (6,8))
      fig,ax = plt.subplots()
      ax.set_xlim([-1, 1])
-     ax.set_ylim([0, Casing_Depth_HUD+ 1])
+     ax.set_ylim([Casing_Depth_HUD+ 1, 0])
      ax.axhline(y=0, color='black', linewidth=1)
      ax.axhline(y=Casing_Depth_HUD, color='black', linewidth=1)
      ax.axhline(y=Tubing_Depth_Top_of_Perf, color='red', linewidth=1)
