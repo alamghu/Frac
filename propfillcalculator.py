@@ -23,11 +23,11 @@ st.sidebar.title('Input')
 
 # Taking Inputs from user by number inputs
 Proppant_Specific_Gravity = st.sidebar.number_input("Proppant Specific Gravity (SG)")
-lbs_of_Proppant_in_Tubular = st.number_input("lbs of Proppant in Tubular (lbs)")
-Tubing_Depth_Top_of_Perf = st.number_input("Top of Perf Tubing Depth (feet)")
-Tubing_ID = st.number_input("Tubing ID (inch)")
-Casing_Depth_HUD = st.number_input("End of Cas-ing/Tubing Depth (feet)")
-Casing_ID = st.number_input("Casing/Tubing ID (inch)")
+lbs_of_Proppant_in_Tubular = st.sidebar.number_input("lbs of Proppant in Tubular (lbs)")
+Tubing_Depth_Top_of_Perf = st.sidebar.number_input("Top of Perf Tubing Depth (feet)")
+Tubing_ID = st.sidebar.number_input("Tubing ID (inch)")
+Casing_Depth_HUD = st.sidebar.number_input("End of Cas-ing/Tubing Depth (feet)")
+Casing_ID = st.sidebar.number_input("Casing/Tubing ID (inch)")
 
 # Logic & Calculation
 A = (lbs_of_Proppant_in_Tubular / (Proppant_Specific_Gravity / 2.65) * 14.3)
