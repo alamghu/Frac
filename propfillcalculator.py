@@ -10,7 +10,7 @@ st.title('Hydraulic Fracturing - Proppant Fill Calculator')
 st.sidebar.title('Input')
 
 # Taking Inputs from user by number inputs
-Proppant_Specific_Gravity = st.sidebar.number_input("Proppant Specific Gravity (SG)", min_value = 1, max_value = 2.65,value =4))
+Proppant_Specific_Gravity = st.sidebar.number_input("Proppant Specific Gravity (SG)", min_value = 1, max_value = 4.65,value =3.5))
 lbs_of_Proppant_in_Tubular = st.sidebar.number_input("lbs of Proppant in Tubular (lbs)", min_value = 1, max_value = 1000000,value =50000))
 Tubing_Depth_Top_of_Perf = st.sidebar.number_input("Top of Perf Tubing Depth (feet)", min_value = 100, max_value = 30000,value =15000))
 Tubing_ID = st.sidebar.number_input("Tubing ID (inch)", min_value = 2.99, max_value = 7,value =3.74))
