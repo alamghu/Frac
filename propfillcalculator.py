@@ -35,7 +35,7 @@ if st.button("Visualize Well"):
      plt.figure(figsize = (6,8))
      fig,ax = plt.subplots()
      ax.set_xlim([-1, 1])
-     ax.set_ylim([0, casing_depth_hud + 1])
+     ax.set_ylim([0, Casing_Depth_HUD+ 1])
      ax.axhline(y=0, color='black', linewidth=1)
      ax.axhline(y=casing_depth_hud, color='black', linewidth=1)
      ax.axhline(y=tubing_depth_top_of_perf, color='red', linewidth=1)
