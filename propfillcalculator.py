@@ -1,5 +1,5 @@
 import streamlit as st
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 # Streamlit app Title
 st.title('Hydraulic Fracturing - Proppant Fill Calculator')
