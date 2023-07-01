@@ -34,7 +34,7 @@ else:
 if st.button("Visualize Wellbore"):
      plt.figure(figsize = (6,8))
      fig,ax = plt.subplots()
-     ax.set_xlim([Tubing_ID-1, Tubing_ID+1])
+     ax.set_xlim([-1, 1])
      ax.set_ylim([Casing_Depth_HUD+ 1, 0])
      ax.axhline(y=0, color='black', linewidth=1)
      ax.axhline(y=Casing_Depth_HUD, color='black', linewidth=1)
