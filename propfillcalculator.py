@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 import streamlit as st
 
 # Streamlit app Title
@@ -41,7 +42,6 @@ if st.button("Visualize Well"):
      ax.axhline(y=top_of_proppant, color='green', linewidth=1)
      ax.text(-0.1, -0.5, "Wellbore", ha='center', va='bottom')
      ax.text(-0.2, tubing_depth_top_of_perf, "Top of Perf", ha='right', va='bottom', color='red')
-
      st.pyplot(fig)
      
      ax.text(-0.2, top_of_proppant, "Top of Proppant", ha='right', va='bottom', color='green')
